@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bpft
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0058-tenant/tkwch-fix-0075-0058-app/devfile-sample-bpft@sha256:c1f9af613b2fc8b1980ab5fb97c1929334041d5e889bfba41ed40eef60b5c7c5
+        name: my-nodejs
+        resources: {}
+status: {}
